@@ -1,12 +1,16 @@
 # Speech T5 project
-text to speech (TTS) using T5 model, you can provide wav files to change the pitch of the output sound.
+text to speech (TTS) using T5 model, you can provide wav files or youtube link with specify time to change the pitch of the output sound.
 
 ## Installation
 ```
 pip install -r requirements.txt
 ```
 
-## Usage
+## Use with Youtube video
+1. edit video_url, start_time, duration, output_voice_sentence in run.py
+2. python run.py
+
+## Manual Usage
 1. put your wav files in the `dataset/input_voice/wav` folder
 2. run prep_cmu_arctic_spkemb.py file, this will generate speaker embedding.
 ```
