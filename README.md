@@ -6,7 +6,7 @@ text to speech (TTS) using T5 model, you can provide wav files or youtube link w
 pip install -r requirements.txt
 ```
 
-## Way1. Use with Youtube video
+## Way1. Input sentence with Youtube video
 1. edit video_url, start_time, duration, output_voice_sentence in run.py
 2. python run.py
 
