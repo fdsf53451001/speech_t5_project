@@ -3,11 +3,11 @@ from yt_to_wav import yt_download_wav
 from speech_t5_transform import generate_voice
 
 # config
-video_url = 'https://www.youtube.com/watch?v=QWDngzLPX5E'
-start_time = 6711  # in seconds
-duration = 1    # in seconds
+video_url = 'https://www.youtube.com/watch?v=iPP9AtTbhC4'
+start_time = 76  # in seconds
+duration = 4    # in seconds
 yt_wav_filename = 'dataset/input_voice/wav/'+'yt_audio.wav'
-output_voice_sentence = 'hello world'
+output_voice_sentence = "Vedal is the creator of all AI's in the Neuroverse—Both named and unnamed AI were programmed and trained by him. He develops and maintains Neuro, and sometimes joins her on streams"
 
 
 # download

@@ -6,11 +6,20 @@ text to speech (TTS) using T5 model, you can provide wav files or youtube link w
 pip install -r requirements.txt
 ```
 
-## Use with Youtube video
+## Way1. Use with Youtube video
 1. edit video_url, start_time, duration, output_voice_sentence in run.py
 2. python run.py
 
-## Manual Usage
+## Way2. Talk to ChatGPT with voice output
+1. you must run run.py first to extract the speaker embedding
+2. Setup OPENAI_API_KEY, npy file path in ConversationSystem.py
+2. python ConversationSystem.py
+
+### Notice
+- When the agent reply pop out, you need to wait for it to generate voice. This will take about 20 seconds.
+- Comment out the "generate_voice" fuction in line 49 to stop voice generation in conversation.
+
+## Way3. Manual Usage
 1. put your wav files in the `dataset/input_voice/wav` folder
 2. run prep_cmu_arctic_spkemb.py file, this will generate speaker embedding.
 ```
